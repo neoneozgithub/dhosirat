@@ -1,0 +1,1511 @@
+<script language="javascript">
+        <!-- BEGIN Script  
+        // where to go if wrong password...    
+        var wrong="srirattana.blogspot.com";    
+        // password...    
+        var password="dho00303";    
+        // prompts the user this...    
+        var name = prompt("Please Enter PASSWORD","");    
+        // if... else statement... right, confirm this, wrong, go to wrong...    
+        if (name == password) {(confirm("Your password is correct"))}    
+        else {location.href=wrong}    
+        // END Script -->    
+    </script>
+
+<style>ul#menu {
+    width: 500px;
+    list-style-type: none;
+    border-top: solid 1px #A52A2A;
+    margin: 0;
+    padding: 0;
+    }
+    ul#menu ol {
+    display: none;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    }
+    ul#menu li, 
+    ul#menu a {
+    font-family: Pridi, cursive;
+    font-size: 14px;
+     color: #785a3c;
+    }
+    ul#menu li {
+    border-bottom: solid 1px #696969;
+    line-height: 22px;
+    }
+    ul#menu ol li {
+    border-bottom: none;
+    }
+    ul#menu ol li:before {
+    content: "- ";
+    }
+    ul#menu a {
+    text-decoration: none;
+    outline: none;
+    }
+    ul#menu a:hover {
+    color: #539dbc;
+    }
+    ul#menu a.active {
+    color: #be5028;
+    }
+    </style>
+
+<script type="text/javascript">
+    /* This script and many more are available free online at
+    The JavaScript Source :: http://javascript.internet.com
+    Created by: Travis Beckham :: http://www.squidfingers.com | http://www.podlob.com
+    version date: 06/02/03 :: If want to use this code, feel free to do so,
+    but please leave this message intact. (Travis Beckham) */
+    // Node Functions
+    if(!window.Node){
+        var Node = {ELEMENT_NODE : 1, TEXT_NODE : 3};
+    }
+        function checkNode(node, filter){
+        return (filter == null || node.nodeType == Node[filter] || node.nodeName.toUpperCase() == filter.toUpperCase());
+    }
+    function getChildren(node, filter){
+        var result = new Array();
+        var children = node.childNodes;
+        for(var i = 0; i < children.length; i++){
+        if(checkNode(children[i], filter)) result[result.length] = children[i];
+    }
+    return result;
+    }
+    function getChildrenByElement(node){
+        return getChildren(node, "ELEMENT_NODE");
+    }
+    function getFirstChild(node, filter){
+        var child;
+        var children = node.childNodes;
+        for(var i = 0; i < children.length; i++){
+            child = children[i];
+            if(checkNode(child, filter)) return child;
+    }
+    return null;
+    }
+    function getFirstChildByText(node){
+        return getFirstChild(node, "TEXT_NODE");
+        }
+    function getNextSibling(node, filter){
+        for(var sibling = node.nextSibling; sibling != null; sibling = sibling.nextSibling){
+        if(checkNode(sibling, filter)) return sibling;
+    }
+    return null;
+    }
+    function getNextSiblingByElement(node){
+        return getNextSibling(node, "ELEMENT_NODE");
+    }
+
+    // Menu Functions & Properties
+        var activeMenu = null;
+        function showMenu() {
+        if(activeMenu){
+        activeMenu.className = "";
+        getNextSiblingByElement(activeMenu).style.display = "none";
+    }
+        if(this == activeMenu){
+        activeMenu = null;
+    } else {
+        this.className = "active";
+        getNextSiblingByElement(this).style.display = "block";
+        activeMenu = this;
+    }
+        return false;
+    }
+    function initMenu(){
+    var menus, menu, text, a, i;
+    menus = getChildrenByElement(document.getElementById("menu"));
+    for(i = 0; i < menus.length; i++){
+        menu = menus[i];
+        text = getFirstChildByText(menu);
+        a = document.createElement("a");
+        menu.replaceChild(a, text);
+        a.appendChild(text);
+        a.href = "#";
+        a.onclick = showMenu;
+        a.onfocus = function(){this.blur()};
+    }
+    }
+    if(document.createElement) window.onload = initMenu;
+
+    </script>
+<!-- เดือนมกราคม 2560 -->    
+    <ul id="menu">
+    <li>เดือนมกราคม 2560
+        <ol>
+        <body>
+        <table width="500" border="1" cellspacing="1" cellpadding="1">
+         <tr>
+            <th width="94" scope="col">สัปดาห์ระบาด</th>
+            <th width="157" scope="col">วันที่ส่ง</th>
+            <th width="151" scope="col">ช่วงวันที่ข้อมูล</th>
+            <th width="75" scope="col">ส่งไฟล์</th>
+        </tr>
+        <tr>
+            <td>1</td>
+                <td>03 ม.ค. 2560</td>
+                <td>30-03 ม.ค. 2560</td>
+                    <td>
+                        <center><a href="https://drive.google.com/drive/folders/0B6KNjUFVhdFlQjBPSjRRang2NUk?usp=sharing" target="_blank">
+                        <img src="http://203.157.165.7/dhf/send2.gif" width=50 height=15 /></a></center>
+                    </td>
+       </tr>
+        <tr>
+            <td>1</td>
+                <td>05 ม.ค. 2560</td>
+                <td>04-05 ม.ค. 2560</td>
+                    <td>
+                        <center><a href="https://drive.google.com/drive/folders/0B6KNjUFVhdFlTkFfTTFyYnN1LW8?usp=sharing" target="_blank">
+                        <img src="http://203.157.165.7/dhf/send2.gif" width=50 height=15 /></a></center>
+                    </td>
+        </tr>
+        <tr>
+            <td>2</td>
+                <td>10 ม.ค. 2560</td>
+                <td>06-10 ม.ค. 2560</td>
+                    <td>
+                        <center><a href="https://drive.google.com/drive/folders/0B6KNjUFVhdFlb2tnTmZTajNhMm8?usp=sharing" target="_blank">
+                        <img src="http://203.157.165.7/dhf/send2.gif" width=50 height=15 /></a></center>
+                    </td>
+        </tr>
+        <tr>
+            <td>2</td>
+                <td>12 ม.ค. 2560</td>
+                <td>11-12 ม.ค. 2560</td>
+                    <td>
+                        <center><a href="https://drive.google.com/drive/folders/0B6KNjUFVhdFlYzVNQkZ2bVhNZFE?usp=sharing" target="_blank">
+                        <img src="http://203.157.165.7/dhf/send2.gif" width=50 height=15 /></a></center>
+                    </td>
+        </tr>
+        <tr>
+            <td>3</td>
+                <td>17 ม.ค. 2560</td>
+                <td>13-17 ม.ค. 2560</td>
+                    <td>
+                        <center><a href="https://drive.google.com/drive/folders/0B6KNjUFVhdFla3UwNmFvNTF2VVU?usp=sharing" target="_blank">
+                        <img src="http://203.157.165.7/dhf/send2.gif" width=50 height=15 /></a></center>
+                    </td>
+        </tr>
+        <tr>
+            <td>3</td>
+                <td>19 ม.ค. 2560</td>
+                <td>18-19 ม.ค. 2560</td>
+                    <td>
+                        <center><a href="https://drive.google.com/drive/folders/0B6KNjUFVhdFlbE8wRkZLcHdTNDQ?usp=sharing" target="_blank">
+                        <img src="http://203.157.165.7/dhf/send2.gif" width=50 height=15 /></a></center>
+                    </td>
+        </tr>
+        <tr>
+            <td>4</td>
+                <td>24 ม.ค. 2560</td>
+                <td>20-24 ม.ค. 2560</td>
+                    <td>
+                        <center><a href="https://drive.google.com/drive/folders/0B6KNjUFVhdFldzF0enBrWGRHdmc?usp=sharing" target="_blank">
+                        <img src="http://203.157.165.7/dhf/send2.gif" width=50 height=15 /></a></center>
+                    </td>
+        </tr>
+        <tr>
+            <td>4</td>
+                <td>26 ม.ค. 2560</td>
+                <td>25-26 ม.ค. 2560</td>
+                    <td>
+                        <center><a href="https://drive.google.com/drive/folders/0B6KNjUFVhdFldURadGs5ODlfNm8?usp=sharing" target="_blank">
+                        <img src="http://203.157.165.7/dhf/send2.gif" width=50 height=15 /></a></center>
+                    </td>
+        </tr>
+        <tr>
+            <td>5</td>
+                <td>31 ม.ค. 2560</td>
+                <td>27-31 ม.ค. 2560</td>
+                    <td>
+                        <center><a href="https://drive.google.com/drive/folders/0B6KNjUFVhdFlVkh4ZS1tRTFXYXM?usp=sharing" target="_blank">
+                        <img src="http://203.157.165.7/dhf/send2.gif" width=50 height=15 /></a></center>
+                    </td>
+        </tr>
+    </body>
+    </table>
+    <br/>
+    <b>รายงานการส่งรายงาน 506 แยกรายรพ.สต.ประจำเดือนมกราคม 2560</b><br/>
+    <img src="https://goo.gl/MFHQGk" width=15 height=15 />= ส่งรายงานทันเวลา
+    <img src="https://lh3.googleusercontent.com/-3HUsx5k_2so/WEH8IAK29CI/AAAAAAAAA2s/nF8mI26xNOkkkKgDpReLNGPUPcxnJBRbgCEw/w140-h140-p/Delete.png" width=15 height=15 />= ส่งรายงานไม่ทันเวลา
+    <img src="https://lh3.googleusercontent.com/-sTcsptPEbKw/WEH8HMHQDcI/AAAAAAAAA2k/61mI-AwJPakb91_xHOZ6tXxviXGTdhqYgCEw/w140-h140-p/Close%2B2.png" width=15 height=15 />= ยังไม่ส่งรายงาน<br/>
+
+    <table width="630" border="1" cellspacing="1" cellpadding="1">
+        <tr>
+            <th width="60" scope="col">สัปดาห์ระบาด</th>
+            <th width="100" scope="col">วันที่ส่ง</th>
+            <th width="110" scope="col">ช่วงวันที่ข้อมูล</th>
+            <th width="40" scope="col">ศรีแก้ว</th>
+            <th width="30" scope="col">โคน</th>
+            <th width="40" scope="col">พิงพวย</th>
+            <th width="30" scope="col">ศรีสุข</th>
+            <th width="30" scope="col">ตูม</th>
+            <th width="57" scope="col">เสื่องข้าว</th>
+            <th width="65" scope="col">ศรีโนนงาม</th>
+            <th width="30" scope="col">สะพุง</th>
+        </tr>
+        <tr>
+            <td>1</td>
+                <td>03 ม.ค. 2560</td>
+                <td>30-03 ม.ค. 2560</td>
+                <!-- 03469 --><td><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                <!-- 03470 --><td><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                <!-- 03471 --><td><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                <!-- 03472 --><td><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                <!-- 03473 --><td><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                <!-- 03474 --><td><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                <!-- 03475 --><td><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                <!-- 03476 --><td><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+        </tr>
+        <tr>
+            <td>1</td>
+                <td>05 ม.ค. 2560</td>
+                <td>04-05 ม.ค. 2560</td>
+                <!-- 03469 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03470 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03471 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03472 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03473 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03474 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03475 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03476 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+        </tr>
+        <tr>
+            <td>2</td>
+                <td>10 ม.ค. 2560</td>
+                <td>06-10 ม.ค. 2560</td>
+                <!-- 03469 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03470 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03471 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03472 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03473 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03474 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03475 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03476 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+        </tr>
+        <tr>
+            <td>2</td>
+                 <td>12 ม.ค. 2560</td>
+                <td>11-12 ม.ค. 2560</td>
+                <!-- 03469 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03470 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03471 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03472 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03473 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03474 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03475 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03476 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+        </tr>
+        <tr>
+            <td>3</td>
+                <td>17 ม.ค. 2560</td>
+                <td>13-17 ม.ค. 2560</td>
+                <!-- 03469 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03470 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03471 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03472 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03473 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03474 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03475 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03476 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+        </tr>
+        <tr>
+            <td>3</td>
+                <td>19 ม.ค. 2560</td>
+                <td>18-19 ม.ค. 2560</td>
+                <!-- 03469 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03470 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03471 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03472 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03473 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03474 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03475 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03476 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+        </tr>
+        <tr>
+            <td>4</td>
+                <td>24 ม.ค. 2560</td>
+                <td>20-24 ม.ค. 2560</td>
+                <!-- 03469 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03470 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03471 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03472 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03473 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03474 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03475 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03476 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+        </tr>
+        <tr>
+            <td>4</td>
+                <td>26 ม.ค. 2560</td>
+                <td>25-26 ม.ค. 2560</td>
+                <!-- 03469 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03470 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03471 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03472 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03473 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03474 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03475 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03476 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+        </tr>
+        <tr>
+            <td>5</td>
+                <td>31 ม.ค. 2560</td>
+                <td>27-31 ม.ค. 2560</td>
+                <!-- 03469 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03470 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03471 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03472 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03473 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03474 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03475 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <!-- 03476 --><td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+        </tr>
+        <tr>
+            <td></td>
+                <td></td>
+                <td>ร้อยละการส่ง 506 (ตัดทุกวันที่25)</td>
+                <!-- 03469 --><td><center>100</center></td>
+                <!-- 03470 --><td><center>100</center></td>
+                <!-- 03471 --><td><center>100</center></td>
+                <!-- 03472 --><td><center>100</center></td>
+                <!-- 03473 --><td><center>100</center></td>
+                <!-- 03474 --><td><center>100</center></td>
+                <!-- 03475 --><td><center>100</center></td>
+                <!-- 03476 --><td><center>100</center></td>
+        <tr>
+        <tr>
+            <td></td>
+                <td></td>
+                <td>คะแนนสมรรถนะ</td>
+                <!-- 03469 --><td><center>5</center></td>
+                <!-- 03470 --><td><center>5</center></td>
+                <!-- 03471 --><td><center>5</center></td>
+                <!-- 03472 --><td><center>5</center></td>
+                <!-- 03473 --><td><center>5</center></td>
+                <!-- 03474 --><td><center>5</center></td>
+                <!-- 03475 --><td><center>5</center></td>
+                <!-- 03476 --><td><center>5</center></td>
+        <tr>
+    </table><br/>
+    <b>หมายเหตุ การคิดคะแนนสมรรถนะ</b><br/> 
+    ร้อยละ 100 คิดค่าแนนสมรรถนะ 5 คะแนน<br/>
+    ร้อยละ 80 คิดค่าแนนสมรรถนะ 4 คะแนน<br/>
+    ร้อยละ 70 คิดค่าแนนสมรรถนะ 3 คะแนน<br/>
+    น้อยกว่าร้อยละ 70 คิดค่าแนนสมรรถนะ 0 คะแนน<br/>
+    <br/>
+    </ol>
+  </li>
+<!-- เดือนกุมภาพันธ์ 2560 --> 
+ <li>เดือนกุมภาพันธ์ 2560
+    <ol>
+    <body>
+        <table width="500" border="1" cellspacing="1" cellpadding="1">
+         <tr>
+            <th width="94" scope="col">สัปดาห์ระบาด</th>
+            <th width="157" scope="col">วันที่ส่ง</th>
+            <th width="151" scope="col">ช่วงวันที่ข้อมูล</th>
+            <th width="75" scope="col">ส่งไฟล์</th>
+        </tr>
+        <tr>
+            <td>5</td>
+                <td>02 ก.พ. 2560</td>
+                <td>01-02 ก.พ. 2560</td>
+                    <td>
+                        <center><a href="https://drive.google.com/drive/folders/0B6KNjUFVhdFlMUlvT2l0X2gxdWM?usp=sharing" target="_blank">
+                        <img src="http://203.157.165.7/dhf/send2.gif" width=50 height=15 /></a></center>
+                    </td>
+       </tr>
+        <tr>
+            <td>6</td>
+                <td>07 ก.พ. 2560</td>
+                <td>03-07 ก.พ. 2560</td>
+                    <td>
+                        <center><a href="https://drive.google.com/drive/folders/0B6KNjUFVhdFlel9ZY1dDWDc2eFU?usp=sharing" target="_blank">
+                        <img src="http://203.157.165.7/dhf/send2.gif" width=50 height=15 /></a></center>
+                    </td>
+        </tr>
+        <tr>
+            <td>6</td>
+                <td>09 ก.พ. 2560</td>
+                <td>08-09 ก.พ. 2560</td>
+                    <td>
+                        <center><a href="https://drive.google.com/drive/folders/0B6KNjUFVhdFlMjc1a1Y2Rkt2aVU?usp=sharing" target="_blank">
+                        <img src="http://203.157.165.7/dhf/send2.gif" width=50 height=15 /></a></center>
+                    </td>
+        </tr>
+        <tr>
+            <td>7</td>
+                <td>14 ก.พ. 2560</td>
+                <td>10-14 ก.พ. 2560</td>
+                    <td>
+                        <center><a href="https://drive.google.com/drive/folders/0B6KNjUFVhdFlLXE5X29GOXlzbjQ?usp=sharing" target="_blank">
+                        <img src="http://203.157.165.7/dhf/send2.gif" width=50 height=15 /></a></center>
+                    </td>
+        </tr>
+        <tr>
+            <td>7</td>
+                <td>16 ก.พ. 2560</td>
+                <td>15-16 ก.พ. 2560</td>
+                    <td>
+                        <center><a href="https://drive.google.com/drive/folders/0B6KNjUFVhdFlSmVxQ2ViaVZndmM?usp=sharing" target="_blank">
+                        <img src="http://203.157.165.7/dhf/send2.gif" width=50 height=15 /></a></center>
+                    </td>
+        </tr>
+        <tr>
+            <td>8</td>
+                <td>21 ก.พ. 2560</td>
+                <td>17-21 ก.พ. 2560</td>
+                    <td>
+                        <center><a href="https://drive.google.com/drive/folders/0B6KNjUFVhdFlbmFuNUp0MklhMVE?usp=sharing" target="_blank">
+                        <img src="http://203.157.165.7/dhf/send2.gif" width=50 height=15 /></a></center>
+                    </td>
+        </tr>
+        <tr>
+            <td>8</td>
+                <td>23 ก.พ. 2560</td>
+                <td>22-23 ก.พ. 2560</td>
+                    <td>
+                        <center><a href="https://drive.google.com/drive/folders/0B6KNjUFVhdFlRUZzZjVMdXlWWUE?usp=sharing" target="_blank">
+                        <img src="http://203.157.165.7/dhf/send2.gif" width=50 height=15 /></a></center>
+                    </td>
+        </tr>
+        <tr>
+            <td>9</td>
+                <td>28 ก.พ. 2560</td>
+                <td>24-28 ก.พ. 2560</td>
+                    <td>
+                        <center><a href="https://drive.google.com/drive/folders/0B6KNjUFVhdFlM09wU2U5aWczd0E?usp=sharing" target="_blank">
+                        <img src="http://203.157.165.7/dhf/send2.gif" width=50 height=15 /></a></center>
+                    </td>
+        </tr>
+    </body>
+    </table>
+    <br/>
+    <b>รายงานการส่งรายงาน 506 แยกรายรพ.สต.ประจำเดือนกุมภาพันธ์ 2560</b><br/>
+    <img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=15 height=15 />= ส่งรายงานทันเวลา
+    <img src="https://lh3.googleusercontent.com/-3HUsx5k_2so/WEH8IAK29CI/AAAAAAAAA2s/nF8mI26xNOkkkKgDpReLNGPUPcxnJBRbgCEw/w140-h140-p/Delete.png" width=15 height=15 />= ส่งรายงานไม่ทันเวลา
+    <img src="https://lh3.googleusercontent.com/-sTcsptPEbKw/WEH8HMHQDcI/AAAAAAAAA2k/61mI-AwJPakb91_xHOZ6tXxviXGTdhqYgCEw/w140-h140-p/Close%2B2.png" width=15 height=15 />= ยังไม่ส่งรายงาน<br/>
+
+    <table width="630" border="1" cellspacing="1" cellpadding="1">
+        <tr>
+            <th width="60" scope="col">สัปดาห์ระบาด</th>
+            <th width="100" scope="col">วันที่ส่ง</th>
+            <th width="110" scope="col">ช่วงวันที่ข้อมูล</th>
+            <th width="40" scope="col">ศรีแก้ว</th>
+            <th width="30" scope="col">โคน</th>
+            <th width="40" scope="col">พิงพวย</th>
+            <th width="30" scope="col">ศรีสุข</th>
+            <th width="30" scope="col">ตูม</th>
+            <th width="57" scope="col">เสื่องข้าว</th>
+            <th width="65" scope="col">ศรีโนนงาม</th>
+            <th width="30" scope="col">สะพุง</th>
+        </tr>
+        <tr>
+            <td>5</td>
+                <td>02 ก.พ. 2560</td>
+                <td>01-02 ก.พ. 2560</td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+        </tr>
+        <tr>
+            <td>6</td>
+                <td>07 ก.พ. 2560</td>
+                <td>03-07 ก.พ. 2560</td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+        </tr>
+        <tr>
+            <td>6</td>
+                <td>09 ก.พ. 2560</td>
+                <td>08-09 ก.พ. 2560</td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+        </tr>
+        <tr>
+            <td>7</td>
+                <td>14 ก.พ. 2560</td>
+                <td>10-14 ก.พ. 2560</td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+        </tr>
+        <tr>
+            <td>7</td>
+                <td>16 ก.พ. 2560</td>
+                <td>15-16 ก.พ. 2560</td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+        </tr>
+        <tr>
+            <td>8</td>
+                <td>21 ก.พ. 2560</td>
+                <td>17-21 ก.พ. 2560</td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+        </tr>
+        <tr>
+            <td>8</td>
+                <td>23 ก.พ. 2560</td>
+                <td>22-23 ก.พ. 2560</td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+        </tr>
+        <tr>
+            <td>9</td>
+                <td>28 ก.พ. 2560</td>
+                <td>24-28 ก.พ. 2560</td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://goo.gl/xLkwTA" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+                <td><img src="https://lh3.googleusercontent.com/-iFHw04Z6Mgc/WEH8NXtVoZI/AAAAAAAAA2s/BKVwOizKMQoXG2GrlRWmaqRYV7qlPQmsACEw/w140-h140-p/Ok.png" width=25 height=25 /></td>
+        </tr>
+        <tr>
+            <td></td>
+                <td></td>
+                <td>ร้อยละการส่ง 506</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>88.9</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+        <tr>
+        <tr>
+            <td></td>
+                <td></td>
+                <td>คะแนนสมรรถนะ</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>4</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+        <tr>
+    </table><br/>
+    <b>หมายเหตุ การคิดคะแนนสมรรถนะ</b><br/> 
+    ร้อยละ 100 คิดค่าแนนสมรรถนะ 5 คะแนน<br/>
+    ร้อยละ 80 คิดค่าแนนสมรรถนะ 4 คะแนน<br/>
+    ร้อยละ 70 คิดค่าแนนสมรรถนะ 3 คะแนน<br/>
+    น้อยกว่าร้อยละ 70 คิดค่าแนนสมรรถนะ 0 คะแนน<br/>
+    <br/>
+    </ol>
+  </li>
+<!-- เดือนมีนาคม 2560 --> 
+ <li>เดือนมีนาคม 2560
+    <ol>
+    <body>
+        <table width="500" border="1" cellspacing="1" cellpadding="1">
+         <tr>
+            <th width="94" scope="col">สัปดาห์ระบาด</th>
+            <th width="157" scope="col">วันที่ส่ง</th>
+            <th width="151" scope="col">ช่วงวันที่ข้อมูล</th>
+            <th width="75" scope="col">ส่งไฟล์</th>
+        </tr>
+        <tr>
+            <td>9</td>
+                <td>02 มี.ค. 2560</td>
+                <td>01-02 มี.ค. 2560</td>
+                    <td>
+                        <center><a href="https://drive.google.com/drive/folders/0B6KNjUFVhdFlVmlOMUt3Q2F2eVE?usp=sharing" target="_blank">
+                        <img src="http://203.157.165.7/dhf/send2.gif" width=50 height=15 /></a></center>
+                    </td>
+       </tr>
+        <tr>
+            <td>10</td>
+                <td>07 มี.ค. 2560</td>
+                <td>03-07 มี.ค. 2560</td>
+                    <td>
+                        <center><a href="https://drive.google.com/drive/folders/0B6KNjUFVhdFlbEZReUpvWGJxZ28?usp=sharing" target="_blank">
+                        <img src="http://203.157.165.7/dhf/send2.gif" width=50 height=15 /></a></center>
+                    </td>
+        </tr>
+        <tr>
+            <td>10</td>
+                <td>09 มี.ค. 2560</td>
+                <td>08-09 มี.ค. 2560</td>
+                    <td>
+                        <center><a href="https://drive.google.com/drive/folders/0B6KNjUFVhdFlRWxReTJ0Qms2MTA?usp=sharing" target="_blank">
+                        <img src="http://203.157.165.7/dhf/send2.gif" width=50 height=15 /></a></center>
+                    </td>
+        </tr>
+        <tr>
+            <td>11</td>
+                <td>14 มี.ค. 2560</td>
+                <td>10-14 มี.ค. 2560</td>
+                    <td>
+                        <center><a href="https://drive.google.com/drive/folders/0B6KNjUFVhdFlXzNjZTlSbjV2VTg?usp=sharing" target="_blank">
+                        <img src="http://203.157.165.7/dhf/send2.gif" width=50 height=15 /></a></center>
+                    </td>
+        </tr>
+        <tr>
+            <td>11</td>
+                <td>16 มี.ค. 2560</td>
+                <td>15-16 มี.ค. 2560</td>
+                    <td>
+                        <center><a href="https://drive.google.com/drive/folders/0B6KNjUFVhdFlZGFzTFRvSi1NSGc?usp=sharing" target="_blank">
+                        <img src="http://203.157.165.7/dhf/send2.gif" width=50 height=15 /></a></center>
+                    </td>
+        </tr>
+        <tr>
+            <td>12</td>
+                <td>21 มี.ค. 2560</td>
+                <td>17-21 มี.ค. 2560</td>
+                    <td>
+                        <center><a href="https://drive.google.com/drive/folders/0B6KNjUFVhdFlU2ZKU1hvTE13VzA?usp=sharing" target="_blank">
+                        <img src="http://203.157.165.7/dhf/send2.gif" width=50 height=15 /></a></center>
+                    </td>
+        </tr>
+        <tr>
+            <td>12</td>
+                <td>23 มี.ค. 2560</td>
+                <td>22-23 มี.ค. 2560</td>
+                    <td>
+                        <center><a href="https://drive.google.com/drive/folders/0B6KNjUFVhdFlUDh6ZlU3Mmhud28?usp=sharing" target="_blank">
+                        <img src="http://203.157.165.7/dhf/send2.gif" width=50 height=15 /></a></center>
+                    </td>
+        </tr>
+        <tr>
+            <td>13</td>
+                <td>28 มี.ค. 2560</td>
+                <td>24-28 มี.ค. 2560</td>
+                    <td>
+                        <center><a href="https://drive.google.com/drive/folders/0B6KNjUFVhdFlZUxFU3dXZ3hWOVk?usp=sharing" target="_blank">
+                        <img src="http://203.157.165.7/dhf/send2.gif" width=50 height=15 /></a></center>
+                    </td>
+        </tr>
+        <tr>
+            <td>13</td>
+                <td>30 มี.ค. 2560</td>
+                <td>29-30 มี.ค. 2560</td>
+                    <td>
+                        <center><a href="https://drive.google.com/drive/folders/0B6KNjUFVhdFlWVo4Q1pMR1hXdFE?usp=sharing" target="_blank">
+                        <img src="http://203.157.165.7/dhf/send2.gif" width=50 height=15 /></a></center>
+                    </td>
+        </tr>
+    </body>
+    </table>
+    <br/>
+    <b>รายงานการส่งรายงาน 506 แยกรายรพ.สต.ประจำเดือนมีนาคม 2560</b><br/>
+    <b>ตรวจสอบการส่งรายงานทุกวันอังคารและวันพฤหัสบดี เวลา 16.00 น.</b><br/>
+    <img src="https://goo.gl/MFHQGk" width=15 height=15 />= ส่งรายงานทันเวลา 
+    <img src="https://goo.gl/xLkwTA" width=15 height=15 />= ส่งรายงานไม่ทันเวลา
+    <img src="https://goo.gl/pDjZb2" width=15 height=15 />= ยังไม่ส่งรายงาน<br/>
+
+    <table width="630" border="1" cellspacing="1" cellpadding="1">
+        <tr>
+            <th width="60" scope="col">สัปดาห์ระบาด</th>
+            <th width="100" scope="col">วันที่ส่ง</th>
+            <th width="110" scope="col">ช่วงวันที่ข้อมูล</th>
+            <th width="40" scope="col">ศรีแก้ว</th>
+            <th width="30" scope="col">โคน</th>
+            <th width="40" scope="col">พิงพวย</th>
+            <th width="30" scope="col">ศรีสุข</th>
+            <th width="30" scope="col">ตูม</th>
+            <th width="57" scope="col">เสื่องข้าว</th>
+            <th width="65" scope="col">ศรีโนนงาม</th>
+            <th width="30" scope="col">สะพุง</th>
+        </tr>
+        <tr>
+            <td Align="center">9</td>
+                <td Align="center">02 มี.ค. 2560</td>
+                <td Align="center">01-02 มี.ค. 2560</td>
+                        <!-- 03469 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03470 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03471 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03472 --><td Align="center"><img src="https://goo.gl/pDjZb2" width=25 height=25 /></td>
+                        <!-- 03473 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03474 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03475 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03476 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+        </tr>
+        <tr>
+            <td Align="center">10</td>
+                <td Align="center">07 มี.ค. 2560</td>
+                <td Align="center">03-07 มี.ค. 2560</td>
+                        <!-- 03469 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03470 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03471 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03472 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03473 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03474 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03475 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03476 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+        </tr>
+        <tr>
+            <td Align="center">10</td>
+                <td Align="center">09 มี.ค. 2560</td>
+                <td Align="center">08-09 มี.ค. 2560</td>
+                        <!-- 03469 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03470 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03471 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03472 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03473 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03474 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03475 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03476 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+        </tr>
+        <tr>
+            <td Align="center">11</td>
+                <td Align="center">14 มี.ค. 2560</td>
+                <td Align="center">10-14 มี.ค. 2560</td>
+                        <!-- 03469 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03470 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03471 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03472 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03473 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03474 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03475 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03476 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+        </tr>
+        <tr>
+            <td Align="center">11</td>
+                <td Align="center">16 มี.ค. 2560</td>
+                <td Align="center">15-16 มี.ค. 2560</td>
+                        <!-- 03469 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03470 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03471 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03472 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03473 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03474 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03475 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03476 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+        </tr>
+        <tr>
+            <td Align="center">12</td>
+                <td Align="center">21 มี.ค. 2560</td>
+                <td Align="center">17-21 มี.ค. 2560</td>
+                        <!-- 03469 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03470 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03471 --><td Align="center"><img src="https://goo.gl/xLkwTA" width=25 height=25 /></td>
+                        <!-- 03472 --><td Align="center"><img src="https://goo.gl/xLkwTA" width=25 height=25 /></td>
+                        <!-- 03473 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03474 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03475 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+                        <!-- 03476 --><td Align="center"><img src="https://goo.gl/MFHQGk" width=25 height=25 /></td>
+        </tr>
+        <tr>
+            <td Align="center">12</td>
+                <td Align="center">23 มี.ค. 2560</td>
+                <td Align="center">22-23 มี.ค. 2560</td>
+                        <!-- 03469 --><td Align="center"><img src="" width=25 height=25 /></td>
+                        <!-- 03470 --><td Align="center"><img src="" width=25 height=25 /></td>
+                        <!-- 03471 --><td Align="center"><img src="" width=25 height=25 /></td>
+                        <!-- 03472 --><td Align="center"><img src="" width=25 height=25 /></td>
+                        <!-- 03473 --><td Align="center"><img src="" width=25 height=25 /></td>
+                        <!-- 03474 --><td Align="center"><img src="" width=25 height=25 /></td>
+                        <!-- 03475 --><td Align="center"><img src="" width=25 height=25 /></td>
+                        <!-- 03476 --><td Align="center"><img src="" width=25 height=25 /></td>
+        </tr>
+        <tr>
+            <td Align="center">13</td>
+                <td Align="center">28 มี.ค. 2560</td>
+                <td Align="center">24-28 มี.ค. 2560</td>
+                        <!-- 03469 --><td Align="center"><img src="" width=25 height=25 /></td>
+                        <!-- 03470 --><td Align="center"><img src="" width=25 height=25 /></td>
+                        <!-- 03471 --><td Align="center"><img src="" width=25 height=25 /></td>
+                        <!-- 03472 --><td Align="center"><img src="" width=25 height=25 /></td>
+                        <!-- 03473 --><td Align="center"><img src="" width=25 height=25 /></td>
+                        <!-- 03474 --><td Align="center"><img src="" width=25 height=25 /></td>
+                        <!-- 03475 --><td Align="center"><img src="" width=25 height=25 /></td>
+                        <!-- 03476 --><td Align="center"><img src="" width=25 height=25 /></td>
+        </tr>
+        <tr>
+            <td Align="center">13</td>
+                <td Align="center">30 มี.ค. 2560</td>
+                <td Align="center">29-30 มี.ค. 2560</td>
+                        <!-- 03469 --><td Align="center"><img src="" width=25 height=25 /></td>
+                        <!-- 03470 --><td Align="center"><img src="" width=25 height=25 /></td>
+                        <!-- 03471 --><td Align="center"><img src="" width=25 height=25 /></td>
+                        <!-- 03472 --><td Align="center"><img src="" width=25 height=25 /></td>
+                        <!-- 03473 --><td Align="center"><img src="" width=25 height=25 /></td>
+                        <!-- 03474 --><td Align="center"><img src="" width=25 height=25 /></td>
+                        <!-- 03475 --><td Align="center"><img src="" width=25 height=25 /></td>
+                        <!-- 03476 --><td Align="center"><img src="" width=25 height=25 /></td>
+        </tr>
+        <tr>
+            <td></td>
+                <td></td>
+                <td Align="center">ร้อยละการส่ง 506</td>
+                <td Align="center">-</td>
+                <td Align="center">-</td>
+                <td Align="center">-</td>
+                <td Align="center">-</td>
+                <td Align="center">-</td>
+                <td Align="center">-</td>
+                <td Align="center">-</td>
+                <td Align="center">-</td>
+        <tr>
+        <tr>
+            <td></td>
+                <td></td>
+                <td Align="center">คะแนนสมรรถนะ</td>
+                <td Align="center">-</td>
+                <td Align="center">-</td>
+                <td Align="center">-</td>
+                <td Align="center">-</td>
+                <td Align="center">-</td>
+                <td Align="center">-</td>
+                <td Align="center">-</td>
+                <td Align="center">-</td>
+        <tr>
+    </table><br/>
+    <b>หมายเหตุ การคิดคะแนนสมรรถนะ</b><br/> 
+    ร้อยละ 100 คิดค่าแนนสมรรถนะ 5 คะแนน<br/>
+    ร้อยละ 80 คิดค่าแนนสมรรถนะ 4 คะแนน<br/>
+    ร้อยละ 70 คิดค่าแนนสมรรถนะ 3 คะแนน<br/>
+    น้อยกว่าร้อยละ 70 คิดค่าแนนสมรรถนะ 0 คะแนน<br/>
+    <br/>
+    </ol>
+  </li>
+  <li>รายงานจำนวนบัตร 506 ตามสัปดาห์ระบาด แยกราย รพ.สต.
+  <!-- รายงานจำนวนบัตร 506 -->
+  <ol>
+      <body>
+        <font face="Pridi" size="3" color="blue">รายงานจำนวนบัตร 506 ตามสัปดาห์ระบาด แยกราย รพ.สต.</font><br/><br/>
+        <font face="Pridi" size="3" color="black">
+            <center><table width="630" border="1" cellspacing="1" cellpadding="1">
+        <tr>
+            <th width="60" scope="col" bgcolor="#CCFFCC">สัปดาห์ระบาด</th>
+            <th width="40" scope="col" bgcolor="#CCFFCC">ศรีแก้ว</th>
+            <th width="30" scope="col" bgcolor="#CCFFCC">โคน</th>
+            <th width="40" scope="col" bgcolor="#CCFFCC">พิงพวย</th>
+            <th width="30" scope="col" bgcolor="#CCFFCC">ศรีสุข</th>
+            <th width="30" scope="col" bgcolor="#CCFFCC">ตูม</th>
+            <th width="50" scope="col" bgcolor="#CCFFCC"> เสื่องข้าว</th>
+            <th width="60" scope="col" bgcolor="#CCFFCC">ศรีโนนงาม</th>
+            <th width="30" scope="col" bgcolor="#CCFFCC">สะพุง</th>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>1</center></td>
+                <!-- 03469 --> <td><center>3</center></td>
+                <!-- 03470 --> <td><center>1</center></td>
+                <!-- 03471 --> <td><center>1</center></td>
+                <!-- 03472 --> <td><center>1</center></td>
+                <!-- 03473 --> <td><center>1</center></td>
+                <!-- 03474 --> <td><center>3</center></td>
+                <!-- 03475 --> <td><center>4</center></td>
+                <!-- 03476 --> <td><center>2</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>2</center></td>
+                <!-- 03469 --> <td><center>3</center></td>
+                <!-- 03470 --> <td><center>2</center></td>
+                <!-- 03471 --> <td><center>4</center></td>
+                <!-- 03472 --> <td><center>4</center></td>
+                <!-- 03473 --> <td bgcolor="#FFCC66"><center>0</center></td>
+                <!-- 03474 --> <td><center>3</center></td>
+                <!-- 03475 --> <td><center>4</center></td>
+                <!-- 03476 --> <td><center>4</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>3</center></td>
+                <!-- 03469 --> <td><center>2</center></td>
+                <!-- 03470 --> <td><center>1</center></td>
+                <!-- 03471 --> <td><center>3</center></td>
+                <!-- 03472 --> <td><center>2</center></td>
+                <!-- 03473 --> <td bgcolor="#FFCC66"><center>0</center></td>
+                <!-- 03474 --> <td><center>8</center></td>
+                <!-- 03475 --> <td><center>4</center></td>
+                <!-- 03476 --> <td><center>3</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>4</center></td>
+                <!-- 03469 --> <td><center>2</center></td>
+                <!-- 03470 --> <td><center>3</center></td>
+                <!-- 03471 --> <td><center>4</center></td>
+                <!-- 03472 --> <td><center>7</center></td>
+                <!-- 03473 --> <td bgcolor="#FFCC66"><center>1</center></td>
+                <!-- 03474 --> <td><center>11</center></td>
+                <!-- 03475 --> <td><center>2</center></td>
+                <!-- 03476 --> <td><center>3</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>5</center></td>
+                <!-- 03469 --> <td><center>3</center></td>
+                <!-- 03470 --> <td><center>0</center></td>
+                <!-- 03471 --> <td><center>2</center></td>
+                <!-- 03472 --> <td><center>1</center></td>
+                <!-- 03473 --> <td><center>1</center></td>
+                <!-- 03474 --> <td><center>5</center></td>
+                <!-- 03475 --> <td><center>3</center></td>
+                <!-- 03476 --> <td><center>2</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>6</center></td>
+                <!-- 03469 --> <td><center>3</center></td>
+                <!-- 03470 --> <td><center>4</center></td>
+                <!-- 03471 --> <td><center>1</center></td>
+                <!-- 03472 --> <td><center>2</center></td>
+                <!-- 03473 --> <td><center>2</center></td>
+                <!-- 03474 --> <td><center>5</center></td>
+                <!-- 03475 --> <td><center>6</center></td>
+                <!-- 03476 --> <td><center>3</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>7</center></td>
+                <!-- 03469 --> <td><center>2</center></td>
+                <!-- 03470 --> <td><center>0</center></td>
+                <!-- 03471 --> <td><center>1</center></td>
+                <!-- 03472 --> <td><center>3</center></td>
+                <!-- 03473 --> <td><center>0</center></td>
+                <!-- 03474 --> <td><center>5</center></td>
+                <!-- 03475 --> <td><center>3</center></td>
+                <!-- 03476 --> <td><center>3</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>8</center></td>
+                <!-- 03469 --> <td><center>2</center></td>
+                <!-- 03470 --> <td><center>1</center></td>
+                <!-- 03471 --> <td><center>4</center></td>
+                <!-- 03472 --> <td><center>2</center></td>
+                <!-- 03473 --> <td><center>1</center></td>
+                <!-- 03474 --> <td><center>5</center></td>
+                <!-- 03475 --> <td><center>2</center></td>
+                <!-- 03476 --> <td><center>2</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>9</center></td>
+                <!-- 03469 --> <td><center>2</center></td>
+                <!-- 03470 --> <td><center>2</center></td>
+                <!-- 03471 --> <td><center>6</center></td>
+                <!-- 03472 --> <td><center>3</center></td>
+                <!-- 03473 --> <td><center>3</center></td>
+                <!-- 03474 --> <td><center>8</center></td>
+                <!-- 03475 --> <td><center>5</center></td>
+                <!-- 03476 --> <td><center>0</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>10</center></td>
+                <!-- 03469 --> <td><center>2</center></td>
+                <!-- 03470 --> <td><center>2</center></td>
+                <!-- 03471 --> <td><center>3</center></td>
+                <!-- 03472 --> <td><center>7</center></td>
+                <!-- 03473 --> <td><center>1</center></td>
+                <!-- 03474 --> <td><center>6</center></td>
+                <!-- 03475 --> <td><center>0</center></td>
+                <!-- 03476 --> <td><center>0</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>11</center></td>
+                <!-- 03469 --> <td><center>2</center></td>
+                <!-- 03470 --> <td><center>1</center></td>
+                <!-- 03471 --> <td><center>0</center></td>
+                <!-- 03472 --> <td><center>7</center></td>
+                <!-- 03473 --> <td><center>2</center></td>
+                <!-- 03474 --> <td><center>4</center></td>
+                <!-- 03475 --> <td><center>6</center></td>
+                <!-- 03476 --> <td><center>3</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>12</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>13</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>14</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>15</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>16</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>17</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>18</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>19</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>20</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>21</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>22</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>23</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>24</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>25</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>26</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>27</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>28</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>29</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>30</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>31</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>32</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>33</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>34</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>35</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>36</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>37</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>38</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>39</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>40</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>41</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>42</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>43</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>44</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>45</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>46</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>47</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>48</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>49</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>50</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>51</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>
+        <tr>
+            <td bgcolor="#CCFFCC"><center>52</center></td>
+                <!-- 03469 --> <td><center>-</center></td>
+                <!-- 03470 --> <td><center>-</center></td>
+                <!-- 03471 --> <td><center>-</center></td>
+                <!-- 03472 --> <td><center>-</center></td>
+                <!-- 03473 --> <td><center>-</center></td>
+                <!-- 03474 --> <td><center>-</center></td>
+                <!-- 03475 --> <td><center>-</center></td>
+                <!-- 03476 --> <td><center>-</center></td>
+        </tr>          
+    </table></center></font><br/>
+      </body>
+      </ol>
+    </li>
+ </ul>
+ </br>
+
+<font face="Pridi" size="1" color="blue">Update 8/03/60 Ver.1.05 โดย จิรวัฒน์ สัมฤทธิ์ ฝ่ายงานสารสนเทศ สสอ.ศรีรัตนะ</font>
